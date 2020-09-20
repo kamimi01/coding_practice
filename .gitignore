@@ -1,0 +1,5 @@
+# vscodeの設定
+.vscode
+
+# 標準入力用のtxt
+*.txt
