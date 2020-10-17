@@ -1,25 +1,25 @@
 import math
 
 n = int(input())
-
 x = list(map(int, input().split()))
 
 manAns = 0
+yuAns = 0
+absX = []
 
 for i in range(len(x)):
-  manAns += abs(x[i])
+  # 絶対値を求める
+  absXValue = abs(x[i])
+  # マンハッタン距離
+  manAns += absXValue
+  # ユークリッド距離
+  yuAns += absXValue ** 2
+  # チェビシェフ距離
+  absX.append(absXValue)
+
+# マンハッタン距離
 print(manAns)
-
-yuAns = 0
-tempYu = 0
-
-for j in range(len(x)):
-  tempYu += abs(x[j]) ** 2
-
-print('{:.15f}'.format(math.sqrt(tempYu)))
-
-absX = []
-for k in range(len(x)):
-  absX.append(abs(x[k]))
-
+# ユークリッド距離
+print('{:.15f}'.format(math.sqrt(yuAns)))
+# チェビシェフ距離
 print(max(absX))
