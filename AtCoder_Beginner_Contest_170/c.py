@@ -1,3 +1,5 @@
+# 1問だけ、WAになってしまったためc_1.pyで正解版を書く
+
 import sys
 
 x, n = map(int, input().split())
