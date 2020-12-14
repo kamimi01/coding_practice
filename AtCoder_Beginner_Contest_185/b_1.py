@@ -1,11 +1,9 @@
+import sys
 n, m, t = map(int, input().split())
 
-ans = n
-timeList = []
+bat = n
+time = 0
 
-for j in range(m):
-  x, y = map(int, input().split())
-  timeList.append([x, y])
-
-now = 0
-leftBattery = n
+for _ in range(m):
+  a, b = map(int, input().split())
+  bat -= a - 
